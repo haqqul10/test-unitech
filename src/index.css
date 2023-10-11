@@ -1,0 +1,263 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: black;
+  background-color: #f1f2f6;
+  text-align: center;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+  }
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+
+.search {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.search-section {
+  position: relative;
+  margin-left: auto;
+  width: 50%;
+}
+.search-icon {
+  position: absolute;
+  z-index: 10;
+  right: 16px;
+  top: 11px;
+  margin-left: auto;
+}
+
+.search-section .form-control {
+  border-radius: 0;
+}
+
+/* table */
+.tabulator-headers {
+  height: auto;
+}
+.tabulator-header {
+  border-bottom: none !important;
+}
+.tabulator-col-content {
+  padding: 12px !important;
+}
+.tabulator-col {
+  border-right: none !important;
+  background-color: #dfe4ea !important;
+}
+.tabulator-cell {
+  border-color: #f1f2f6 !important;
+  padding: 12px !important;
+}
+.tabulator-cell:first-child {
+  border-left: 1px solid #f1f2f6 !important;
+}
+.tabulator-row {
+  border-color: #f1f2f6 !important;
+}
+.tabulator-row.tabulator-selectable:hover {
+  cursor: auto;
+  background-color: white;
+}
+
+.tabulator-page {
+  border: none !important;
+}
+
+.tabulator-page-size {
+  margin-right: 26px !important;
+}
+
+.tabulator-footer {
+  padding: 16px 12px !important;
+  border: none !important;
+}
+
+.nav-tabs-section {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.nav-tabs-section li {
+  list-style: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.nav-tabs-section li:hover {
+  border-bottom: 2px solid black;
+  margin-bottom: 0px;
+}
+.nav-tabs-section li.active {
+  border-bottom: 2px solid black;
+}
+
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 80vh;
+  width: 80vw;
+}
+
+/* card */
+.card {
+  border-color: #f1f2f6 !important;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+}
+.card-list {
+  flex-direction: row !important;
+  gap: 16px;
+}
+.card-list .card-img {
+  width: 200px;
+  height: 200px;
+}
+.card-list .card-rate {
+  justify-content: start;
+}
+.card-list .card-title {
+  text-align: left;
+  white-space: normal !important;
+}
+.card-list .card-text {
+  text-align: left;
+}
+.card .card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: normal;
+  font-size: 16px;
+}
+.container-card .col {
+  margin-bottom: 25px;
+}
+.card-rate {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.card-icon-rate {
+  color: #ffc048;
+}
+.card-stats {
+  font-weight: normal !important;
+  font-size: 16px;
+}
+
+.card .card-text {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.list-box {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 1rem;
+}
+.list-box .active .list-box-icon {
+  color: black;
+}
+.list-box-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  color: #d2dae2;
+}
+
+.btn-loadMore {
+  margin-top: 30px;
+  border-radius: 0 !important;
+  border-color: #dfe4ea !important;
+  background-color: #dfe4ea !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-list .card-img {
+    width: 120px;
+    height: 120px;
+  }
+  .list-box {
+    margin-bottom: 16px;
+    gap: 8px;
+  }
+}
